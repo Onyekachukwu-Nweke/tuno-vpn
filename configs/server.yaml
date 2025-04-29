@@ -1,0 +1,24 @@
+# Tuno VPN Server Configuration
+
+# Network settings
+listen_addr: "0.0.0.0:8080"   # Address to listen on (host:port)
+tun_device: "tun0"            # TUN device name
+tun_ip: "10.0.0.1/24"         # TUN device IP with CIDR
+mtu: 1400                     # Maximum Transmission Unit
+
+# TLS settings
+cert_file: "~/.tuno/server.crt"  # Path to TLS certificate file
+key_file: "~/.tuno/server.key"   # Path to TLS key file
+
+# Authentication settings (for future use)
+auth_mode: "none"                # Authentication mode (none, password, certificate)
+password_file: "~/.tuno/passwd"  # Path to password file (for password auth)
+
+# Logging settings
+log_level: "info"               # Log level (debug, info, warn, error)
+log_file: "~/.tuno/server.log"  # Path to log file (empty for stdout)
+
+# Advanced settings
+enable_ipv6: false    # Enable IPv6 support
+enable_nat: true      # Enable NAT for client traffic
+max_clients: 10       # Maximum number of clients
