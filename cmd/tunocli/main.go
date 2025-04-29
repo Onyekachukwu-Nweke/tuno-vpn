@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/Onyekachukwu-Nweke/tuno-vpn/internal/config"
 	"github.com/Onyekachukwu-Nweke/tuno-vpn/internal/logger"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
